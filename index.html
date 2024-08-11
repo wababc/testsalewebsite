@@ -5,25 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boutique de Vêtements</title>
   <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Petite boutique fictive vendant des vêtements pour un projet de test.">
 </head>
 <body>
-<h1>Boutique de Vêtements</h1>
-<div class="product">
-  <h2>T-shirt Blanc</h2>
-  <p>Prix: 20€</p>
-  <button onclick="addToCart('T-shirt Blanc', 20)">Ajouter au panier</button>
-</div>
-<div class="product">
-  <h2>Jean Slim</h2>
-  <p>Prix: 50€</p>
-  <button onclick="addToCart('Jean Slim', 50)">Ajouter au panier</button>
-</div>
-<div class="product">
-  <h2>Casquette Noire</h2>
-  <p>Prix: 15€</p>
-  <button onclick="addToCart('Casquette Noire', 15)">Ajouter au panier</button>
-</div>
-<a href="cart.html">Voir le panier</a>
+<header>
+  <h1>Boutique de Vêtements</h1>
+</header>
+
+<main>
+  <section class="product-list">
+    <article class="product">
+      <img src="images/tshirt-blanc.jpg" alt="T-shirt Blanc" />
+      <h2>T-shirt Blanc</h2>
+      <p>Prix: 20€</p>
+      <button onclick="addToCart('T-shirt Blanc', 20)">Ajouter au panier</button>
+    </article>
+    <article class="product">
+      <img src="images/jean-slim.jpg" alt="Jean Slim" />
+      <h2>Jean Slim</h2>
+      <p>Prix: 50€</p>
+      <button onclick="addToCart('Jean Slim', 50)">Ajouter au panier</button>
+    </article>
+    <article class="product">
+      <img src="images/casquette-noire.jpg" alt="Casquette Noire" />
+      <h2>Casquette Noire</h2>
+      <p>Prix: 15€</p>
+      <button onclick="addToCart('Casquette Noire', 15)">Ajouter au panier</button>
+    </article>
+  </section>
+
+  <nav>
+    <a href="cart.html">Voir le panier</a>
+  </nav>
+</main>
 
 <script src="scripts.js"></script>
 </body>
